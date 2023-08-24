@@ -1,0 +1,79 @@
+<!-- 2- Crea una clase llamada Persona que diga las siguientes condiciones:
+Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento. Si quieres añadir alguna propiedad extra puedes hacerlo.
+Los métodos que se debe poder utilizar  son:
+mostrarGeneracion: este método debe mostrar un mensaje indicando a qué generación pertenece la persona creada y cual es el rasgo característico de esta generación.
+Para realizar este método tener en cuenta la siguiente tabla de generaciones:
+esMayorDeEdad: indica si es mayor de edad, devuelve un mensaje indicando que la persona es mayor de edad.
+mostrarDatos: devuelve toda la información del objeto.
+Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente. -->
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Generaciones - Ejercicio 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="./ejercicio2.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="mb-5">
+        <nav class="navbar navbar-expand-lg bg-warning">
+            <div class="container">
+              <a class="navbar-brand" href="./ejercicio1.html">
+                <img src="./assets/logo.png" alt="Logo Arcade" id="navbarLogo">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarPaginaSailorMoon" aria-controls="navbarPaginaSailorMoon" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarPaginaSailorMoon">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./ejercicio2.html">Generaciones</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Lista de tareas</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio4.html">Reloj digital</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio5.html">Cronómetro</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./ejercicio6.html">Temporizador</a>
+                  </li>
+              </div>
+            </div>
+          </nav>
+        </header>
+    <h1 class="text-light">Información de Persona</h1>
+    <form class="bg-light" id="persona-form">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required />
+      <label for="edad">Edad:</label>
+      <input type="number" id="edad" required />
+      <label for="DNI">DNI:</label>
+      <input type="text" id="DNI" required />
+      <label for="sexo">Sexo (H/M):</label>
+      <input type="text" id="sexo" required />
+      <label for="peso">Peso:</label>
+      <input type="number" step="0.01" id="peso" required />
+      <label for="altura">Altura:</label>
+      <input type="number" step="0.01" id="altura" required />
+      <label for="año-nacimiento">Año de Nacimiento (dd/mm/aaaa):</label>
+      <input
+        type="text"
+        id="año-nacimiento"
+        required
+        pattern="\d{2}/\d{2}/\d{4}"
+        placeholder="dd/mm/aaaa"
+      />
+      <button class="botones" type="button" id="mostrar-generacion">Mostrar Generación</button>
+      <button class="botones" type="button" id="es-mayor-edad">¿Es Mayor de Edad?</button>
+    </form>
+    <div id="resultado"></div>
+    <script src="./ejercicio2.js"></script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+/* 4- Crear una web con un reloj que muestre información sobre la fecha, año y hora. */
+
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333333;
+}
+
+h1{
+    font-size: 2rem;
+}
+#navbarLogo{
+    width: 80px;
+
+}
+
+  #clock{
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  #date{
+    font-size: 1.2rem;
+  }
+  #day{
+    font-size: 1.5rem;
+  }

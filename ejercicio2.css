@@ -1,0 +1,79 @@
+/* 2- Crea una clase llamada Persona que diga las siguientes condiciones:
+Sus propiedades son: nombre, edad, DNI, sexo (H hombre, M mujer), peso y altura, año de nacimiento. Si quieres añadir alguna propiedad extra puedes hacerlo.
+Los métodos que se debe poder utilizar  son:
+mostrarGeneracion: este método debe mostrar un mensaje indicando a qué generación pertenece la persona creada y cual es el rasgo característico de esta generación.
+Para realizar este método tener en cuenta la siguiente tabla de generaciones:
+esMayorDeEdad: indica si es mayor de edad, devuelve un mensaje indicando que la persona es mayor de edad.
+mostrarDatos: devuelve toda la información del objeto.
+Luego crea la interfaz necesaria para que el usuario pueda crear un objeto persona, permitiendo ingresar las propiedades mediante un formulario, también agregar los botones “mostrar generación”, es “mayor de edad” e indicar en un alert el resultado de la función correspondiente.
+*/
+
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #333333;
+  }
+  
+  h1 {
+    margin-top: 20px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    margin-top: 10px;
+  }
+  
+  input {
+    padding: 5px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  #resultado {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #fff;
+  }
+
+  #navbarLogo{
+    width: 80px;
+
+}
+
+.botones{
+    padding: 5px 15px;
+    font-size: 20px;
+    border: none;
+    background-color: #FFC107;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .botones:hover {
+    background-color: #FF8DC6;
+  }
